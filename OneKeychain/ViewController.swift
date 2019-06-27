@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     // Get app id prefix for accessing keychain from Info.plist
-//    let appIdPrefix = Bundle.main.object(forInfoDictionaryKey: "AppIdentifierPrefix") as! String
+    let appIdPrefix = Bundle.main.object(forInfoDictionaryKey: "AppIdentifierPrefix") as! String
     // Uncomment following if hardcoding app id prefix in app.
-    let appIdPrefix = "8XPT93F9Q7."
+//    let appIdPrefix = "8XPT93F9Q7."
     print("AppIdPrefix : "+appIdPrefix)
 
     // keychainAccessIdentifier is the identifier mentioned in entitlements file for keychain-access-groups
